@@ -195,9 +195,9 @@ GameObject:
   - component: {fileID: 933436874}
   - component: {fileID: 933436879}
   - component: {fileID: 933436878}
+  - component: {fileID: 933436877}
   - component: {fileID: 933436876}
   - component: {fileID: 933436875}
-  - component: {fileID: 933436877}
   m_Layer: 0
   m_Name: Test_Player
   m_TagString: Untagged
@@ -235,8 +235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 1900810539}
   orientation: {fileID: 44291283}
-  moveSpeed: 3500
-  maxSpeed: 20
+  moveSpeed: 1500
+  maxSpeed: 10
   grounded: 0
   whatIsGround:
     serializedVersion: 2
@@ -264,7 +264,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933436873}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ce32cc29fd34586479fcd9e2fe75dc23, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
