@@ -29,7 +29,8 @@ public class Throw_Item : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("space is released");
-            Rb.AddForce(transform.forward * 500);
+            Rb.AddForce(transform.forward * 400);
+            Rb.AddForce(transform.up * 300);
             Rb.useGravity = true;
         }
 

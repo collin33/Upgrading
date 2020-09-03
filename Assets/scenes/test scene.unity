@@ -364,9 +364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51fa511dba388e4e9e1fa25c1b39287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameObject: {fileID: 4949987496916157478, guid: ebb002fbd7779674aa509a8da1d7a39e, type: 3}
+  GameObject: {fileID: 4139891767263773854, guid: 84fccf37b25e3b24486d031d94fb02dd, type: 3}
   SpawnPoint: {fileID: 361474103}
-  Prefab: {fileID: 4468832463899763817, guid: ebb002fbd7779674aa509a8da1d7a39e, type: 3}
+  Prefab: {fileID: 5533098660767631961, guid: 84fccf37b25e3b24486d031d94fb02dd, type: 3}
 --- !u!1 &1400635426
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +552,7 @@ Transform:
   m_GameObject: {fileID: 1612282785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.6087246, y: -1.16, z: -2.267108}
-  m_LocalScale: {x: 34.99, y: 0.39, z: 39.11}
+  m_LocalScale: {x: 118, y: 0.39, z: 117.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
