@@ -18,8 +18,6 @@ public class Throw_Item : MonoBehaviour
 
     void Update()
     {
-        for(int i =0; i<1; i--)
-        {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("space is down");
@@ -36,18 +34,6 @@ public class Throw_Item : MonoBehaviour
                 Rb.AddForce(transform.up * 300);
                 Rb.useGravity = true;
             }
-
-            if (i == 5)
-            {
-                Destroy(Prefab);
-            }
-
-        }
-
-
-
-        
-
     }
 
    /* void OnCollisionEnter(Collision collision)
