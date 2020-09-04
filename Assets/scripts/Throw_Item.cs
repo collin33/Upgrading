@@ -18,25 +18,35 @@ public class Throw_Item : MonoBehaviour
 
     void Update()
     {
+        for(int i =0; i<1; i--)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("space is down");
+                Rb = Instantiate(Prefab, SpawnPoint.position, SpawnPoint.rotation) as Rigidbody;
+                Rb.useGravity = false;
+                GameObject.transform.position = SpawnPoint.transform.position;
+                GameObject.transform.rotation = SpawnPoint.transform.rotation;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                Debug.Log("space is released");
+                Rb.AddForce(transform.forward * 500);
+                Rb.AddForce(transform.up * 300);
+                Rb.useGravity = true;
+            }
+
+            if (i == 5)
+            {
+                Destroy(Prefab);
+            }
+
+        }
+
+
+
         
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("space is down");
-            Rb = Instantiate(Prefab, SpawnPoint.position, SpawnPoint.rotation) as Rigidbody;
-            Rb.useGravity = false;
-            GameObject.transform.position = SpawnPoint.transform.position;
-            GameObject.transform.rotation = SpawnPoint.transform.rotation;
-
-
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            Debug.Log("space is released");
-            Rb.AddForce(transform.forward * 500);
-            Rb.AddForce(transform.up * 300);
-            Rb.useGravity = true;
-        }
 
     }
 
